@@ -65,7 +65,16 @@ else
 */
 
 
-//Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+//Задача 8: Напишите программу, которая на вход принимает число (N),
+// а на выходе показывает все чётные числа от 1 до N.
 
+Console.WriteLine ("Input your 1st number: ");
+int number_N = Convert.ToInt32(Console.ReadLine());
 
+int current_i = 2;
 
+while (current_i <= number_N)
+{
+    Console.Write (current_i + " ");
+    current_i = current_i + 2; // current_i +=; current_i = current_i + 1
+}
